@@ -45,8 +45,8 @@ var shell = require('gulp-shell');
 // gulp Start
 
 gulp.task('default', function(done) {
-    gulp.watch('sass/**/*.scss', ['styling']);
-    gulp.watch('js/**/*.js', ['lint']);
+    gulp.watch('sass/**/*.scss', gulp.series('styling'));
+    gulp.watch('js/**/*.js', gulp.series('lint'));
     gulp.watch(['index.html', 'js/*.js', 'css/main.css']).on('change', browserSync.reload);
     browserSync.init({
         server: './'
