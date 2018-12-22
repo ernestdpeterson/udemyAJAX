@@ -8,6 +8,7 @@ $lg: lightgray;
 html{
     height: 100%;
     box-sizing: border-box;
+    font-size: 1.5em;
 }
 *,
 *:before,
@@ -23,6 +24,17 @@ body {
 }
 #theHeader{
     text-align: center;
+}
+#output{
+     display: flex; 
+     flex-wrap: wrap;
+}
+#loadMore{
+    font-size: 1em;
+    border: 0;
+    background-color: #0000ffa6;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px grey;
 }
 #theFooter{
     position: absolute;
